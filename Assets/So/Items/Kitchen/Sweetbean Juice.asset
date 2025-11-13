@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cbb465f1adc9dd42ae651aab2d0d7d6, type: 3}
+  m_Name: Sweetbean Juice
+  m_EditorClassIdentifier: 
+  Name: Sweetbean Juice
+  OneStarScore: 7860
+  TwoStarScore: 30300
+  ThreeStarScore: 45700
+  FourStarScore: 85400
+  DeckSize: 7
+  ZeroStarWP: 2704
+  OneStarWP: 3380
+  TwoStarWP: 3718
+  ThreeStarWP: 4225
+  FourStarWP: 5239

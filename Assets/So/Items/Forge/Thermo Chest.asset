@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cbb465f1adc9dd42ae651aab2d0d7d6, type: 3}
+  m_Name: Thermo Chest
+  m_EditorClassIdentifier: 
+  Name: Thermo Chest
+  OneStarScore: 1250
+  TwoStarScore: 4490
+  ThreeStarScore: 24000
+  FourStarScore: 51000
+  DeckSize: 6
+  ZeroStarWP: 880
+  OneStarWP: 1100
+  TwoStarWP: 1210
+  ThreeStarWP: 1375
+  FourStarWP: 1705

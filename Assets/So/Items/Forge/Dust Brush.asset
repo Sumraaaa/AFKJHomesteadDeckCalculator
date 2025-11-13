@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cbb465f1adc9dd42ae651aab2d0d7d6, type: 3}
+  m_Name: Dust Brush
+  m_EditorClassIdentifier: 
+  Name: Dust Brush
+  OneStarScore: 114
+  TwoStarScore: 12400
+  ThreeStarScore: 78100
+  FourStarScore: 178000
+  DeckSize: 6
+  ZeroStarWP: 5288
+  OneStarWP: 6610
+  TwoStarWP: 7271
+  ThreeStarWP: 8263
+  FourStarWP: 10246

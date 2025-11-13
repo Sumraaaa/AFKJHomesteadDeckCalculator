@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cbb465f1adc9dd42ae651aab2d0d7d6, type: 3}
+  m_Name: Soothing Tonic
+  m_EditorClassIdentifier: 
+  Name: Soothing Tonic
+  OneStarScore: 3290
+  TwoStarScore: 3650
+  ThreeStarScore: 4580
+  FourStarScore: 5240
+  DeckSize: 8
+  ZeroStarWP: 439
+  OneStarWP: 5049
+  TwoStarWP: 604
+  ThreeStarWP: 687
+  FourStarWP: 851

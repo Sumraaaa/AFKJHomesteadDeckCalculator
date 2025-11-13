@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e37ee123dfd3064789d0bc98b7598f5, type: 3}
+  m_Name: Reforge
+  m_EditorClassIdentifier: 
+  StartValue: 0
+  AddedValue: 0
+  bonusValue: 0
+  CardAmounts: 0000000000000000000000000000000000000000000000000000000000000000000000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
+  isArtisan: 0
+  reforgeAmount: 3
