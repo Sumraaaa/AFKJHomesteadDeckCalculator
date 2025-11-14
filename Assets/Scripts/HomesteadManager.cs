@@ -190,6 +190,7 @@ public class HomesteadManager : MonoBehaviour
 
     private bool hasSweetbeanJuiced = false;
     private int cardCounter = 0;
+    private bool isTea = false;
     private int CalculateResults()
     {
         //int result = 0;
@@ -262,6 +263,7 @@ public class HomesteadManager : MonoBehaviour
 
         cardCounter = 0;
         hasSweetbeanJuiced = false;
+        isTea = false;
         foreach (var c in tempCards)
         {
             c.ResetAddedValue(); 
@@ -270,6 +272,7 @@ public class HomesteadManager : MonoBehaviour
         if (isCurrentItemName("Fireward Ring"))
             leftColour += 15;
 
+        
         while (tempCards.Count > 0)
         {
 
@@ -331,8 +334,16 @@ public class HomesteadManager : MonoBehaviour
                 float chance = Random.Range(0f, 1f);
                 if (chance < 0.25f)
                 {
-                    CurrentRoundCalc(card);
-                    card.OnActivation(this);
+                    if (card is Cut)
+                    {
+                        IncreaseRandomColour(card.GetValue(this));
+                    }
+                    else if (!(card is SlowCook))
+                    {
+
+                        CurrentRoundCalc(card);
+                        card.OnActivation(this);
+                    }
                 }
             }
 
@@ -721,6 +732,15 @@ public class HomesteadManager : MonoBehaviour
         {
             if (slowCooklvltwo)
             {
+                if (isCurrentItemName("Midnight Tea"))
+                {
+                    float chance = Random.Range(0f, 1f);
+                    if (chance < 0.25f)
+                    {
+                        leftColour += slowcookAmount;
+                        rightColour += slowcookAmount;
+                    }
+                }
                 leftColour += slowcookAmount;
                 rightColour += slowcookAmount;
             }
