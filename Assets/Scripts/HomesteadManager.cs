@@ -340,7 +340,6 @@ public class HomesteadManager : MonoBehaviour
                     else if (card is HeatControl)
                     {
                         IncreaseRandomColour(card.GetValue(this));
-                        HeatControl();
                     }
                     else if (!(card is SlowCook))
                     {
