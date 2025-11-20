@@ -232,8 +232,9 @@ public class HomesteadManager : MonoBehaviour
         recipeMultiplier = 1;
         recipeSuccess = false;
         recipeLevel2 = false;
+        recipelvl2Success = false;
 
-        hasFirstForgeCardPassed = false;
+    hasFirstForgeCardPassed = false;
         firstForgeAmount = 0;
 
         fuseAmountDifference = 0;
@@ -294,14 +295,12 @@ public class HomesteadManager : MonoBehaviour
             lastCardName = currentCardName;       // shift previous
             currentCardName = card.name;
 
-            if (recipeLevel2)
+
+            if (lastCardName != null && card.name == lastCardName )
             {
-                if (lastCardName != null && card.name == lastCardName )
-                {
-                    recipeSuccess = true;
-                }
+                recipelvl2Success = true;
             }
-            else if (lastCardName != null && secondlastCardName != null && card.name == lastCardName && card.name == secondlastCardName )
+            if (lastCardName != null && secondlastCardName != null && card.name == lastCardName && card.name == secondlastCardName )
             {
                 recipeSuccess = true;
             }
@@ -337,6 +336,11 @@ public class HomesteadManager : MonoBehaviour
                     if (card is Cut)
                     {
                         IncreaseRandomColour(card.GetValue(this));
+                    }
+                    else if (card is HeatControl)
+                    {
+                        IncreaseRandomColour(card.GetValue(this));
+                        HeatControl();
                     }
                     else if (!(card is SlowCook))
                     {
@@ -627,11 +631,21 @@ public class HomesteadManager : MonoBehaviour
 
     private void ByTheRecipeCheck()
     {
-        if(recipeSuccess)
+        if(recipeLevel2 && recipelvl2Success)
+        {
             for (int i = 0; i < exactCookAmount; i++)
             {
                 MultiplyRandomColour(recipeMultiplier);
             }
+        }
+        else if(recipeSuccess)
+        {
+
+            for (int i = 0; i < exactCookAmount; i++)
+            {
+                MultiplyRandomColour(recipeMultiplier);
+            }
+        }
     }
     private void OddSweet()
     {
@@ -755,6 +769,7 @@ public class HomesteadManager : MonoBehaviour
         }      
     }
     private bool recipeSuccess = false;
+    private bool recipelvl2Success = false;
     private int exactCookAmount = 0;
     private int recipeMultiplier = 1;
     private bool recipeLevel2 = false;
